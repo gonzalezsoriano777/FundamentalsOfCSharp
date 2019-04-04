@@ -17,7 +17,7 @@ namespace Fundamentals
             // myAudi._location = "Germany";
             // myAudi._model = "RS7";
 
-            Console.WriteLine("Welcome to your new and improved Audi");
+            Console.WriteLine("Welcome to your new and improved Audi, sent from Germany");
         }
     }
 }
