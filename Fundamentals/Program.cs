@@ -25,7 +25,16 @@ namespace Fundamentals
 
             // Calling the location
             Console.WriteLine(myAudi.location);
+            Console.WriteLine(myAudi.model);
+
+        }
+
+        // Following code are all public classes
+
+        public void CreateCar()
+        {
             Console.WriteLine("Welcome to your new and improved Audi, sent from Germany");
         }
+
     }
 }
