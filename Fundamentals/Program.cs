@@ -8,14 +8,23 @@ namespace Fundamentals
 {
     class AudiCar
     {
+
+        // Learned to create strings that can be called through the console, must be outside of the Main func. to be properly called
+        string location;
+        string model;
+
         static void Main(string[] args)
         {
+
+            // New AudiCar object
             AudiCar myAudi = new AudiCar();
             
              // Calling different methods from the class itself
-             myAudi._location = "Germany";
-             myAudi._model = "RS7";
+             myAudi.location = "Germany";
+             myAudi.model = "RS7";
 
+            // Calling the location
+            Console.WriteLine(myAudi.location);
             Console.WriteLine("Welcome to your new and improved Audi, sent from Germany");
         }
     }
