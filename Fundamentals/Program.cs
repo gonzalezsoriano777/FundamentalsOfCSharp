@@ -10,8 +10,14 @@ namespace Fundamentals
     {
 
         // Learned to create strings that can be called through the console, must be outside of the Main func. to be properly called
-        string location;
-        string model;
+
+        // Private strings that can only be used in this class
+        private string location;
+        private string model;
+
+        // Used GET and SET on both location and model to get both of them and assign them to a value assigned
+        public string Location { get => location; set => location = value; }
+        public string Model { get => model; set => model = value; }
 
         static void Main(string[] args)
         {
@@ -20,12 +26,12 @@ namespace Fundamentals
             AudiCar myAudi = new AudiCar();
             
              // Calling different methods from the class itself
-             myAudi.location = "Germany";
-             myAudi.model = "RS7";
+             myAudi.Location = "Germany";
+             myAudi.Model = "RS7";
 
             // Calling the location
-            Console.WriteLine(myAudi.location);
-            Console.WriteLine(myAudi.model);
+            Console.WriteLine(myAudi.Location);
+            Console.WriteLine(myAudi.Model);
 
         }
 
