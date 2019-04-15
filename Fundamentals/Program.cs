@@ -19,6 +19,8 @@ namespace Fundamentals
 
         
         // Used GET and SET on both location and model to get both of them and assign them to a value assigned
+        // This method is called encapsulation
+
         public string Location
         {
             get => location; set => location = value;
