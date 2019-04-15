@@ -8,7 +8,12 @@ namespace Fundamentals
 {
     class AudiCar
     {
-        public AudiCar(int loc, int make, int model)
+        public AudiCar(string loc, string make, string model)
+        {
+            this.Location = loc;
+            this.Make = make;
+            this.Model = model;
+        }
 
         // Learned to create strings that can be called through the console, must be outside of the Main func. to be properly called
 
@@ -39,10 +44,16 @@ namespace Fundamentals
         static void Main(string[] args)
         {
 
-            // New AudiCar object
-            AudiCar myAudi = new AudiCar();
+            // instantiate object
+            // Since we created constructors for this object you need to add the properties it uses
+
+            AudiCar myAudi = new AudiCar("Germany", "RS7", "RM1000");
             
             Console.WriteLine("Welcome to your new and improved Audi, sent and made from Germany!");
+
+            Console.WriteLine(myAudi.Location);
+            Console.WriteLine(myAudi.Make);
+            Console.WriteLine(myAudi.Model);
 
         }
 
