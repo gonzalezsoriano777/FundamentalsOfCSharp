@@ -8,6 +8,16 @@ namespace Fundamentals
 {
     class AudiCar
     {
+
+        #region Region example, for usage of code
+
+        public void Ex()
+        {
+            Console.WriteLine("Example declared");
+        }
+        #endregion
+
+
         public AudiCar(string loc, string make, string model)
         {
             this.Location = loc;
@@ -23,6 +33,10 @@ namespace Fundamentals
         private string model;
 
         
+
+
+
+
         // Used GET and SET on both location and model to get both of them and assign them to a value assigned
         // This method is called encapsulation
 
