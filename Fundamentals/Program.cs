@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Fundamentals
 {
-    class AudiCar
+    public class AudiCar : DifferentColors
     {
 
         #region Region example, for usage of code
@@ -24,8 +24,6 @@ namespace Fundamentals
             this.Make = make;
             this.Model = model;
         }
-
-        // Learned to create strings that can be called through the console, must be outside of the Main func. to be properly called
 
         // Private strings that can only be used in this class
         private string location;
@@ -76,4 +74,25 @@ namespace Fundamentals
 
 
     }
+
+    public class DifferentColors : ColorSizes
+    {
+
+        public void Colors()
+        {
+            string Color = "blue";
+        }
+
+    }
+
+     public class ColorSizes
+     {
+        public void Size()
+        {
+             int Sizes = 7;
+        }
+
+        
+    }
+
 }
