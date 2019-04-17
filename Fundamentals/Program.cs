@@ -70,8 +70,8 @@ namespace Fundamentals
             #region Next Lines are class for inherting
             #endregion
 
-            var human = new Human ();
-            var alien = new Alien ();
+            Human human = new Human ();
+            Alien alien = new Alien ();
 
             // Will be set to false since it value was never [ set ]
             Console.WriteLine(alien.moves);
