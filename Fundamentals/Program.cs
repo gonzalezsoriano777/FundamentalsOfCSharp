@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Fundamentals
 {
-    public class AudiCar : DifferentColors
+    public class AudiCar
     {
 
         #region Region example, for usage of code
@@ -30,7 +30,7 @@ namespace Fundamentals
         private string make;
         private string model;
 
-        
+
 
 
 
@@ -48,7 +48,7 @@ namespace Fundamentals
             get => model; set => model = value;
         }
 
-        public string Make 
+        public string Make
         {
             get => make; set => make = value;
         }
@@ -60,39 +60,56 @@ namespace Fundamentals
             // Since we created constructors for this object you need to add the properties it uses
 
             AudiCar myAudi = new AudiCar("Germany", "RS7", "RM1000");
-            
+
             Console.WriteLine("Welcome to your new and improved Audi, sent and made from Germany!");
 
             Console.WriteLine(myAudi.Location);
             Console.WriteLine(myAudi.Make);
             Console.WriteLine(myAudi.Model);
 
+            #region Next Lines are class for inherting
+            #endregion
+
+            var human = new Human ();
+            var alien = new Alien ();
+
+            // Will be set to false since it value was never [ set ]
+            Console.WriteLine(alien.moves);
+
         }
-
-        // Following code are all public classes
-
-
-
     }
 
-    public class DifferentColors : ColorSizes
+    #region Inheriting with Human and alien
+
+    public class GeneralObject
     {
-
-        public void Colors()
-        {
-            string Color = "blue";
+        // inheriting the general properties that both human and alien use
+        public GeneralObject(){
         }
 
+        public bool moves { get; set; }
+        public string name { get; set; }
+        public string color { get; set; }
     }
 
-     public class ColorSizes
-     {
-        public void Size()
-        {
-             int Sizes = 7;
+    public class Human : GeneralObject
+    {
+        public Human(){
         }
 
-        
+        public string NoseStructure { get; set; }
     }
+
+    public class Alien : GeneralObject
+    {
+        public Alien(){
+        }
+
+        public bool CanSpeak { get; set; }
+    }
+
+    #endregion
 
 }
+
+
