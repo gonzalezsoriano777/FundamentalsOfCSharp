@@ -76,6 +76,16 @@ namespace Fundamentals
             // Will be set to false since it value was never [ set ]
             Console.WriteLine(alien.moves);
 
+            #region Another inheritance demostration
+
+            TypesOfShoes myShoeOne = new TypesOfShoes("Jordans", 200.35f);
+            Console.WriteLine("The Cost of those {0} would be {1}", myShoeOne.Brand, myShoeOne.Cost);
+
+            TypesOfShoes myShoeTwo = new TypesOfShoes("Nikes", 125.50f, "Purple", 9.5f);
+            Console.WriteLine("The Cost of those {0}, and they would be {1}, there also {2} and the size is {3}", myShoeTwo.Brand, myShoeTwo.Cost, myShoeTwo.Color, myShoeTwo.Size);
+
+            #endregion
+
         }
     }
 
@@ -110,6 +120,59 @@ namespace Fundamentals
 
     #endregion
 
+
+    #region Created constructors w/ inheritance.. more simple and unique
+
+    public class Shoes
+    {
+        public string Color;
+        public float Size;
+        public string HighOrLow;
+
+        
+    }
+
+
+    public class TypesOfShoes : Shoes
+    {
+        public string Brand;
+        public float Cost;
+
+        public TypesOfShoes()
+        {
+
+        }
+
+        public TypesOfShoes(string brand)
+        {
+            this.Brand = brand;
+        }
+
+        public TypesOfShoes(string brand, float cost)
+        {
+            this.Brand = brand;
+            this.Cost = cost;
+        }
+
+        public TypesOfShoes(string brand, float cost, string color, float size)
+        {
+            this.Brand = brand;
+            this.Cost = cost;
+            this.Color = color;
+            this.Size = size;
+        }
+
+        public TypesOfShoes(string brand, float cost, string color, float size, string highOrlow)
+        {
+            this.Brand = brand;
+            this.Cost = cost;
+            this.Color = color;
+            this.Size = size;
+            this.HighOrLow = highOrlow;
+        }
+    }
+
+    #endregion
 }
 
 
