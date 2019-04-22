@@ -89,7 +89,7 @@ namespace Fundamentals
         }
     }
 
-    #region Inheriting with Human and alien
+    #region Inheriting with Human and alien, simple process
 
     public class GeneralObject
     {
@@ -98,7 +98,7 @@ namespace Fundamentals
         }
 
         public bool moves { get; set; }
-        public string name { get; set; }
+        public string name { get; set; },
         public string color { get; set; }
     }
 
@@ -121,6 +121,7 @@ namespace Fundamentals
     #endregion
 
     #region Created constructors w/ inheritance.. more simple and unique
+
 
     public class Shoes
     {
@@ -172,6 +173,10 @@ namespace Fundamentals
     }
 
     #endregion
+
+
+
+
 }
 
 
