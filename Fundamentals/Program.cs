@@ -109,6 +109,8 @@ namespace Fundamentals
             Console.WriteLine(myAudi.Make);
             Console.WriteLine(myAudi.Model);
 
+            Console.WriteLine();
+
             #region Next Lines are class for inherting
             #endregion
 
