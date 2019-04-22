@@ -75,6 +75,14 @@ namespace Fundamentals
             foreach (int n in numbers)
                 Console.WriteLine(n);
 
+            // same struct for each data type
+            bool[] myBool = new bool[3];
+
+            myBool[0] = false;
+            myBool[1] = true;
+            myBool[2] = false;
+
+            Console.WriteLine("Is the index of myBool[#]: {0}?", myBool[1]);
 
 
             #endregion
