@@ -34,7 +34,6 @@ namespace Fundamentals
 
 
 
-
         // Used GET and SET on both location and model to get both of them and assign them to a value assigned
         // This method is called encapsulation
 
@@ -55,6 +54,30 @@ namespace Fundamentals
 
         static void Main(string[] args)
         {
+
+            #region Practicing with arrays, that can be either int, char, strings and bools
+
+            // you can specify the size of an array, if not to find the "length" then use .Length
+            int[] numbers = new int[] {3, 8, 4, 1, 7, 8};
+
+            Console.WriteLine("Length: {0}", numbers.Length);
+
+            // find index of array
+            int index = Array.IndexOf(numbers, 7);
+            Console.WriteLine("Index of 7 is: {0}", index);
+
+            // clearing an array number, [ # index and amount of # cleared ]
+            Array.Clear(numbers, 0, 3);
+
+            Console.WriteLine("Effect of Clear()");
+            
+           // used for lists and arrays, naviagate through each item 
+            foreach (int n in numbers)
+                Console.WriteLine(n);
+
+
+
+            #endregion
 
             // instantiate object
             // Since we created constructors for this object you need to add the properties it uses
@@ -98,7 +121,7 @@ namespace Fundamentals
         }
 
         public bool moves { get; set; }
-        public string name { get; set; },
+        public string name { get; set; }
         public string color { get; set; }
     }
 
