@@ -60,7 +60,7 @@ namespace Fundamentals
             // you can specify the size of an array, if not to find the "length" then use .Length
             int[] numbers = new int[] {3, 8, 4, 1, 7, 8};
 
-            Console.WriteLine("Length: {0}", numbers.Length);
+            Console.WriteLine("Length:  {0}", numbers.Length);
 
             // find index of array
             int index = Array.IndexOf(numbers, 7);
