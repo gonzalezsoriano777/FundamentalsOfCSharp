@@ -77,7 +77,8 @@ namespace Fundamentals
 
             // same struct for each data type
             bool[] myBool = new bool[3];
-
+            
+            // can set statements
             myBool[0] = false;
             myBool[1] = true;
             myBool[2] = false;
