@@ -58,20 +58,29 @@ namespace Fundamentals
             #region Practicing with arrays, that can be either int, char, strings and bools
 
             // you can specify the size of an array, if not to find the "length" then use .Length
-            int[] numbers = new int[] {3, 8, 4, 1, 7, 8};
+            int[] numbers = new int[3] { 3, 8, 4};
 
             Console.WriteLine("Length:  {0}", numbers.Length);
 
             // find index of array
-            int index = Array.IndexOf(numbers, 7);
+            int index = Array.IndexOf(numbers, 4);
             Console.WriteLine("Index of 7 is: {0}", index);
 
             // clearing an array number, [ # index and amount of # cleared ]
-            Array.Clear(numbers, 0, 3);
+            Array.Clear(numbers, 0, 1);
 
             Console.WriteLine("Effect of Clear()");
-            
-           // used for lists and arrays, naviagate through each item 
+
+            // used for lists and arrays, naviagate through each item 
+            foreach (int n in numbers)
+                Console.WriteLine(n);
+
+            // copy item in array, or array itself, ilib
+            int[] anotherNum = new int[3];
+            Array.Copy(numbers, anotherNum, 3);
+
+            Console.WriteLine("Effect of copy of array: {0}");
+
             foreach (int n in numbers)
                 Console.WriteLine(n);
 
@@ -85,8 +94,9 @@ namespace Fundamentals
 
             Console.WriteLine("Is the index of myBool[#]: {0}?", myBool[1]);
 
-
             #endregion
+
+            Console.WriteLine();
 
             // instantiate object
             // Since we created constructors for this object you need to add the properties it uses
