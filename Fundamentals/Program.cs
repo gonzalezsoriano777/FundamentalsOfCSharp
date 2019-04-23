@@ -30,7 +30,7 @@ namespace Fundamentals
         private string make;
         private string model;
 
-        #region
+        #region Creating Enums, ..Creating your own datatypes
         const int StateImport = 15;
         const int StateTax = 30;
         const int StateSize = 45;
@@ -42,7 +42,7 @@ namespace Fundamentals
             StateSize = 45
             
         }
-        #endregion Creating Enums, .. Creating your own datatypes
+        #endregion 
 
         // Used GET and SET on both location and model to get both of them and assign them to a value assigned
         // This method is called encapsulation
