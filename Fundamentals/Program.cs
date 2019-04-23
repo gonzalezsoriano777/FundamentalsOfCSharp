@@ -30,7 +30,7 @@ namespace Fundamentals
         private string make;
         private string model;
 
-        #region Creating Enums, ..Creating your own datatypes
+        #region Creating Enums..creating your own datatypes
         const int StateImport = 15;
         const int StateTax = 30;
         const int StateSize = 45;
