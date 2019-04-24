@@ -111,7 +111,7 @@ namespace Fundamentals
             // instantiate object
             // Since we created constructors for this object you need to add the properties it uses
 
-            AudiCar myAudi = new AudiCar("Germany", "RS7", "RM1000");
+            AudiCar myAudi = new AudiCar("Germany", "RS7", "TSM1000");
 
             Console.WriteLine("Welcome to your new and improved Audi, sent and made from Germany!");
 
