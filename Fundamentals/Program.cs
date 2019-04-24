@@ -106,6 +106,20 @@ namespace Fundamentals
 
             #endregion
 
+            #region Creating loops just to be clear
+
+            // loops through num, until it reaches 10 but only can loop on even num.
+            for(int num = 0; num <= 10; num++)
+            {
+                if(num % 2 == 0)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("# of times it will reach 10: {0} ", num);
+                }
+            }
+
+            #endregion
+
             Console.WriteLine();
 
             // instantiate object
