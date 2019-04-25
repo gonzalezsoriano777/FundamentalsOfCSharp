@@ -106,10 +106,13 @@ namespace Fundamentals
 
             #endregion
 
+            #region Practicing with Lists with int
+            #endregion
+
             #region Creating loops just to be clear
 
             // loops through num, until it reaches 10 but only can loop on even num.
-            for(int num = 0; num <= 10; num++)
+            for (int num = 0; num <= 10; num++)
             {
                 if(num % 2 == 0)
                 {
