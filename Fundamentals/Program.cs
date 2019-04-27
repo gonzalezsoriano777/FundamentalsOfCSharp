@@ -115,7 +115,7 @@ namespace Fundamentals
             Console.WriteLine("IndexOf() of 4 is: {0}", myListNum.IndexOf(4));
 
             // Using .Add() to add an int to the list
-            Console.WriteLine("Adding the number 7 after 4: ", myListNum.Add(7));
+            
 
             #endregion
 
