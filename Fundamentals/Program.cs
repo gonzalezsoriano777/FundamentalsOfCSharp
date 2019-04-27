@@ -107,6 +107,9 @@ namespace Fundamentals
             #endregion
 
             #region Practicing with Lists with int
+
+            List<int> num = new List<int>() { 1, 2, 3, 4 }; 
+
             #endregion
 
             #region Creating loops just to be clear
