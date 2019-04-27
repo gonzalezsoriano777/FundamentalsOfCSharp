@@ -103,12 +103,19 @@ namespace Fundamentals
             myBool[2] = false;
 
             Console.WriteLine("Is the index of myBool[#]: {0}?", myBool[1]);
+            Console.WriteLine();
 
             #endregion
 
             #region Practicing with Lists with int
 
-            List<int> num = new List<int>() { 1, 2, 3, 4 }; 
+            Console.WriteLine("List methods for development : ");
+            List<int> myListNum = new List<int>() { 1, 2, 3, 4 }; 
+
+            Console.WriteLine("IndexOf() of 4 is: {0}", myListNum.IndexOf(4));
+
+            // Using .Add() to add an int to the list
+            Console.WriteLine("Adding the number 7 after 4: ", myListNum.Add(7));
 
             #endregion
 
@@ -131,7 +138,7 @@ namespace Fundamentals
             // instantiate object
             // Since we created constructors for this object you need to add the properties it uses
 
-            AudiCar myAudi = new AudiCar("Germany", "RS7", "TSM1000");
+            AudiCar myAudi = new AudiCar("Germany", "RS7", "RSM1000");
 
             Console.WriteLine("Welcome to your new and improved Audi, sent and made from Germany!");
 
