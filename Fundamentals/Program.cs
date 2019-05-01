@@ -112,7 +112,7 @@ namespace Fundamentals
             Console.WriteLine("List methods for development : ");
             List<int> myListNum = new List<int>() { 1, 2, 3, 4 }; 
 
-            Console.WriteLine("IndexOf() of 4 is:  {0}", myListNum.IndexOf(4));
+            Console.WriteLine("IndexOf() of 4 is: {0}", myListNum.IndexOf(4));
 
             // Using .Add() to add an int to the list
             
