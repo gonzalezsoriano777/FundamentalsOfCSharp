@@ -95,9 +95,7 @@ namespace Fundamentals
                 Console.WriteLine(n);
 
             // Reversing arrays
-
-            Console.WriteLine();
-            Console.WriteLine();
+            Console.WriteLine("Effects of reversing array()");
             Array.Reverse(numbers);
 
             foreach(int n in numbers)
@@ -105,6 +103,9 @@ namespace Fundamentals
                 Console.WriteLine(n);
             }
 
+
+
+            Console.WriteLine();
             // same struct for each data type
             bool[] myBool = new bool[3];
             
