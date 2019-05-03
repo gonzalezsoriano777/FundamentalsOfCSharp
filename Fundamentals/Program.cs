@@ -94,6 +94,17 @@ namespace Fundamentals
             foreach (int n in numbers)
                 Console.WriteLine(n);
 
+            // Reversing arrays
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Array.Reverse(numbers);
+
+            foreach(int n in numbers)
+            {
+                Console.WriteLine(n);
+            }
+
             // same struct for each data type
             bool[] myBool = new bool[3];
             
