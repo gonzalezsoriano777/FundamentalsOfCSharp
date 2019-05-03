@@ -74,7 +74,7 @@ namespace Fundamentals
 
             // find index of array
             int index = Array.IndexOf(numbers, 4);
-            Console.WriteLine("Index of 7 is: {0}", index);
+            Console.WriteLine("Index of 7 is:  {0}", index);
 
             // clearing an array number, [ # index and amount of # cleared ]
             Array.Clear(numbers, 0, 1);
