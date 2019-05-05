@@ -95,7 +95,7 @@ namespace Fundamentals
                 Console.WriteLine(n);
 
             // Reversing arrays
-            Console.WriteLine("Effects of reversing array()");
+            Console.WriteLine("Effects of reversing array() ");
             Array.Reverse(numbers);
 
             foreach(int n in numbers)
