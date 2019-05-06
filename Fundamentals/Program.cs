@@ -89,7 +89,7 @@ namespace Fundamentals
             int[] anotherNum = new int[3];
             Array.Copy(numbers, anotherNum, 3);
 
-            Console.WriteLine("Effect of copy of array:  {0}");
+            Console.WriteLine("Effect of copy of array: {0}");
 
             foreach (int n in numbers)
                 Console.WriteLine(n);
