@@ -65,9 +65,6 @@ namespace Fundamentals
         static void Main(string[] args)
         {
 
-            #region Practicing using Lists with different methods
-            #endregion
-
             #region Practicing with arrays, that can be either int, char, strings and bools
 
             // you can specify the size of an array, if not to find the "length" then use .Length
