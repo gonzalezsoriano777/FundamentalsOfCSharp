@@ -231,6 +231,7 @@ namespace Fundamentals
         public string Brand;
         public float Cost;
 
+        // This idea of having the same method but with different signatures is called OVERLOADING
         public TypesOfShoes()
         {
 
